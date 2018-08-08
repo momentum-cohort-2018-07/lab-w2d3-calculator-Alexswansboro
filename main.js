@@ -70,5 +70,5 @@ clear.addEventListener('click', function addInput(){
    });  
 equal.addEventListener('click', function addInput(){
     var evaluation= eval(document.querySelector('.display').innerHTML)
-    document.querySelector('.display').innerHTML = evaluation
+    document.querySelector('.display').innerHTML =   evaluation
    });
