@@ -1,0 +1,32 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body {
+    max-width: 500px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+.number_button{
+    width:20%;
+    display:inline-block;
+    font-size: 2rem;
+}
+.clear_and_display{
+    width:100%;
+}
+.clear_button{
+    display:inline-block;
+    width:20%;
+}
+.display{
+    display:inline-block;
+    background-color:red;
+    height:38px;
+    width:45%;
+    margin-bottom: -5px;
+    margin-left: 5px;
+    position: absolute;
+}
