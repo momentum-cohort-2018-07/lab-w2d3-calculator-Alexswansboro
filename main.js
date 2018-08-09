@@ -1,3 +1,29 @@
+document.addEventListener("keydown", function(e){
+    console.log(e);
+    console.log(e.keyCode);
+
+    if(e.keyCode === 187  && e.shiftKey === true){
+        console.log('You clicked +')
+    }
+
+    if(e.keyCode===13){
+        e.preventDefault();
+        var evaluation = eval(document.querySelector('.display').innerHTML)
+        document.querySelector('.display').innerHTML = evaluation
+        console.log("it is") 
+
+    }
+
+    if(e.keyCode===13){
+        e.preventDefault();
+        var evaluation = eval(document.querySelector('#math').value)
+        console.log(evaluation);
+        console.log("it is") 
+
+    }
+} );
+
+
 var button1 = document.querySelector('.number_1');
 var button2 = document.querySelector('.number_2');
 var button3 = document.querySelector('.number_3');
@@ -8,7 +34,6 @@ var button7 = document.querySelector('.number_7');
 var button8 = document.querySelector('.number_8');
 var button9 = document.querySelector('.number_9');
 var button0 = document.querySelector('.number_0');
-
 var addition = document.querySelector('.addition');
 var subtraction = document.querySelector('.subtraction');
 var multiplication = document.querySelector('.multiplication');
@@ -70,3 +95,4 @@ equal.addEventListener('click', function addInput() {
     var evaluation = eval(document.querySelector('.display').innerHTML)
     document.querySelector('.display').innerHTML = evaluation
 });
+
